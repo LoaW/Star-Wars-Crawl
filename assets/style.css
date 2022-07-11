@@ -1,0 +1,139 @@
+*, *::before, *::after {
+  font-family: "Coustard", serif;
+}
+
+body {
+  background-color: rgb(2, 0, 5);
+  background-image: url("https://toppng.com/uploads/preview/stars-space-dark-universe-infinity-11570053619atkgmxanzc.jpg");
+  overflow: hidden;
+}
+
+.introduction {
+  margin: auto;
+  margin-top: 400px;
+  display: flex;
+  justify-content: center;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: intro;
+          animation-name: intro;
+  opacity: 0;
+}
+
+.introduction--texte {
+  color: rgb(92, 133, 167);
+  font-size: 60px;
+}
+
+.logo {
+  position: relative;
+  margin: auto;
+  margin-top: -350px;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: intro;
+          animation-name: intro;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.generique {
+  perspective: 450px;
+}
+
+.generique--texte {
+  color: white;
+  text-align: center;
+  color: yellow;
+  font-size: 45px;
+  position: relative;
+  -webkit-animation: scrolling 60s linear forwards;
+          animation: scrolling 60s linear forwards;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+@-webkit-keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@-webkit-keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@-webkit-keyframes scrolling {
+  from {
+    top: 0px;
+    transform: translateZ(0) rotateX(20deg);
+  }
+  to {
+    top: -800px;
+    transform: translateZ(-2500px) rotateX(21deg);
+  }
+}
+@keyframes scrolling {
+  from {
+    top: 0px;
+    transform: translateZ(0) rotateX(20deg);
+  }
+  to {
+    top: -800px;
+    transform: translateZ(-2500px) rotateX(21deg);
+  }
+}/*# sourceMappingURL=style.css.map */

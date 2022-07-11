@@ -1,0 +1,89 @@
+*, *::before, *::after
+{
+    font-family: 'Coustard', serif;
+}
+
+body{
+    background-color: rgb(2, 0, 5);
+    background-image:url("https://toppng.com/uploads/preview/stars-space-dark-universe-infinity-11570053619atkgmxanzc.jpg");
+    overflow: hidden;
+}
+
+.introduction{
+    margin: auto;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+    animation-duration: 10s;
+    animation-name: intro;
+    opacity: 0;
+}
+
+.introduction--texte{
+    color: rgb(92, 133, 167);
+    font-size: 60px;
+
+}
+
+.logo{
+    position: relative;
+    margin: auto;
+    margin-top: -350px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation-duration: 10s;
+    animation-name: intro;
+    animation-delay: 10s;
+}
+
+.generique{
+    perspective: 450px;
+}
+
+.generique--texte{
+    color: white;
+    text-align: center;
+    color:yellow;
+    font-size: 45px;
+    position: relative;
+    animation: scrolling 60s linear forwards;
+    animation-delay: 15s;
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.7;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes logo {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.7;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes scrolling {
+    from {top: 0px; transform: translateZ(0) rotateX(20deg);}
+    to {top: -800px; transform: translateZ(-2500px) rotateX(21deg);}
+}
